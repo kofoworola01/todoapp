@@ -23,7 +23,7 @@ export default class AddTodo extends Component {
         return (
             <div>
                 <form>
-                    <label> Add Todo: </label>
+                    <label className="add-text"> Add Todo: </label>
                     <input className="add-todo" type='text' onChange={this.handleChange} value={this.state.content}/>
                     <button onClick={this.handleSubmit}> Submit </button>
                 </form>

@@ -40,3 +40,6 @@ li {
   border: 1px solid white;
   margin: 4px;
 }
+.add-text {
+  font-weight: bold;
+}
