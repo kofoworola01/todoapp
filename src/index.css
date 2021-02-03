@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.todo-app {
+  background-color: pink;
+  height: 70%;
+  margin: 50px;
+  text-align: center;
+  border: 1px solid deeppink;
+  padding: 15px;
+}
+.app-text {
+  color: deeppink;
+}
+li {
+  list-style: none;
+  background-color: #fff;
+  margin: 15px;
+  height: 40px;
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.del-btn {
+  border: 1px solid salmon;
+  margin-left: 90px;
+}
+.add-todo {
+  border: 1px solid white;
+  margin: 5px;
+}
