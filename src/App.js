@@ -18,12 +18,14 @@ export default class App extends Component {
       todos: todos
     })
   }
-  addTodo = (todo) =>{
+  addTodo = (todo) => {
+  if(todo.content !== ''){
     todo.id = Math.random();
     let todos = [...this.state.todos, todo];
     this.setState({
       todos: todos
     })
+  }
   }
 
   render() {
