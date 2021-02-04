@@ -4,10 +4,7 @@ import AddTodo from './AddTodo'
 
 export default class App extends Component {
   state = {
-    todos: [
-      {id : 1, content: "buy some milk"},
-      {id : 2, content: "buy some flour"}
-    ]
+    todos: []
   }
 
   handleDelete = (id) => {
@@ -28,12 +25,19 @@ export default class App extends Component {
   }
   }
 
+
+  clearTodos = () => {
+    this.setState({
+      todos: []
+    })
+  }
+
   render() {
     return (
       <div className="todo-app">
         <h1 className="app-text">Todo's</h1>
         <Todos todos={this.state.todos} handleDelete={this.handleDelete}/>
-        <AddTodo addTodo={this.addTodo} />
+        <AddTodo addTodo={this.addTodo} clearTodos={this.clearTodos}/>
       </div>
     )
   }
