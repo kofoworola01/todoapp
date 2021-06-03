@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import Todos from './Todos'
-import AddTodo from './AddTodo'
+import React, { Component } from 'react';
+import Todos from './Todos';
+import AddTodo from './AddTodo';
 
 export default class App extends Component {
   state = {
@@ -13,7 +13,7 @@ export default class App extends Component {
     });
     this.setState({
       todos: todos
-    })
+    });
   }
   addTodo = (todo) => {
   if(todo.content !== ''){
@@ -24,7 +24,6 @@ export default class App extends Component {
     })
   }
   }
-
 
   clearTodos = () => {
     this.setState({
